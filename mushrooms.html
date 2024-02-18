@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature</title>
+    <style>
+        body {
+            background: #004a2f;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 40px;
+            color: #feffe4;
+        }
+
+        h2 {
+            text-align: center;
+            border: 1px solid #feffe4;
+            padding: 15px;
+            font-size: 20px;
+            border-radius: 5px;
+            color: #feffe4;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto; 
+            max-width: 400px; 
+            border-radius: 10px;
+        }
+
+        p {
+            line-height: 1.5;
+            font-size: 17px;
+            text-align: center;
+            color: #feffe4;
+            margin: 20px 0 10px;
+        }
+
+        button {
+            display: block;
+            margin: 20px auto;
+            color: #dc2f2f; 
+            border: none;
+            border-radius: 8px;
+            padding: 10px 15px;
+            background-color:#f2f2b0;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        button:hover {
+            opacity: 0.8;
+            color: #f2f2b0;
+            background-color: #dc2f2f; 
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 30px 60px;
+        }
+
+        .learn-more {
+            display: block;
+            margin-top: 18px;
+            text-align: center;
+            color: #fff59d;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>
+        Nature is the best!
+    </h1>
+    <h2>
+        Especially because of all the mushrooms you can find!
+    </h2>
+    <br />
+    <hr />
+    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/109/505/original/R.jpg?1704554833"
+    alt="Mushroom"
+    width="200"/>
+    <hr />
+    <p>
+        There are about <strong>14,000</strong> species of mushrooms that have been described so far. However, 
+        mycologists suspect that this is only a fraction of what’s out there,
+        and we have likely identified only a tiny percentage of the world’s mushroom species.
+    </p>
+        <a href="https://en.wikipedia.org/wiki/Mushroom" 
+        target="_blank"
+        class="learn-more"
+        >
+        Learn more about Mushrooms on wikipedia
+        </a>
+        <br />
+        <br />
+    <button class="forage-button">
+        Find some trails to start on your mushroom hunt!
+    </button>
+    <br />
+    <p class="footer">
+This page was built by Michelle Griffith
+</p>
+</div>
+<script>
+    function forage() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+
+        alert(
+            "Thank you " + 
+            name +
+            "! We'll be in touch by email, meanwhile happy foraging!"
+        );
+    }
+
+    let forageButton = document.querySelector(".forage-button");
+    forageButton.addEventListener("click", forage);
+</script>
+</body>
+</html>
